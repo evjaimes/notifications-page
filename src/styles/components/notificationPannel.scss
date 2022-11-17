@@ -1,0 +1,43 @@
+// TEXT CLASSES ----------------------------------------
+
+.text-bold {
+  font-weight: 800;
+
+  &__title {
+    @extend .text-bold;
+    font-size: 20px !important;
+  }
+}
+
+// TEXT CLASSES ----------------------------------------
+
+.col-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.general-container {
+  background-color: $light-blue !important;
+}
+
+.pannel-container {
+  width: 60%;
+  border-radius: 8px;
+  padding: 1.5%;
+  background-color: $white;
+}
+
+.number-container {
+  @extend .col-flex;
+  width: 30px;
+  background-color: $primary-color-two;
+  color: $white;
+  border-radius: 8px;
+}
